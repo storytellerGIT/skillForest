@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.MessageDao">
+    <select id="queryMessage" resultType="com.example.demo.entity.MessageUser">
+        SELECT messageid,receiver,sender,title,date_format(send_time,'%Y/%m/%d %H:%i:%s') as send_time,content,openid,icon_url,nickname,school,school_hide,academy,academy_hide,grade , grade_hide , major,major_hide ,register_time, credits
+        FROM message, user
+        WHERE receiver = #{userid}
+        AND openid = sender
+        ORDER BY send_time DESC
+    </select>
+    <select id="queryMessageById" resultType="com.example.demo.entity.Message">
+        SELECT *
+        FROM message
+        WHERE messageid = #{messageId}
+    </select>
+    <insert id="insertMessage" parameterType="com.example.demo.entity.Message" useGeneratedKeys="true" keyProperty="messageid" keyColumn="messageid">
+        INSERT INTO message
+        VALUES (#{messageid},#{receiver},#{sender},#{title},#{sendTime},#{content})
+    </insert>
+</mapper>

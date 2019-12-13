@@ -1,0 +1,5 @@
+<!--miniprogram/pages/operation/operation.wxml-->
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap="formSubmit" class="tap" type="primary">登录/注册</button>
+<button bindtap="visitor" class="visitor">游客访问</button>
+<view class="rule" bindtap="rule">《社区规则》</view>
+<view class="introduction" bindtap="introduction">《平台介绍》</view>

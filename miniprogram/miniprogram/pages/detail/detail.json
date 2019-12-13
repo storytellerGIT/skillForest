@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tb-icon": "/dist/tb-icon/icon"
+    },
+  "navigationBarTitleText": "详情"
+}

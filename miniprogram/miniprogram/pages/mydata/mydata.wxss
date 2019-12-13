@@ -1,0 +1,120 @@
+.container{
+  padding: 0;
+  font-size: 14rpx;
+  color: #000;
+}
+
+.flex-wrp{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+  width: 725rpx;
+  height: 200rpx;
+  background: #f3f7fa;
+  padding: 50rpx 0;
+  margin: 15rpx 0 10rpx 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 2px #eeeeee;
+}
+
+.userinfo-img{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.divLine{
+ background: #E0E3DA;
+ width: 35%;
+ height: 1rpx;
+}
+
+.user .userinfo-avatar{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.user .user-info{
+  flex: 5;
+  text-align: left;
+}
+
+.user .user-info text{
+  display: block;
+}
+
+.user .user-info .userinfo-nickname{
+  text-align: center;
+  padding: 8rpx 0 0 0;
+  font-size: 40rpx;
+  color: rgb(88, 90, 92);
+}
+
+.user .user-info .edit{
+  font-size: 28rpx;
+  font: bold;
+  color: #bababa;
+  line-height: 34rpx;
+}
+
+.my{
+  padding: 50rpx 0 0 0;
+  margin: 15rpx 0 0 0;
+  border-top: solid 1px #ebebeb;
+  border-bottom: solid 2px #ebebeb;
+}
+
+.my .my-item{
+  width: 750rpx;
+  background: #ffffff;
+  padding: 0
+}
+
+.my .my-item .myitem-icon{
+  flex: 1;
+}
+
+.my .my-item .myitem-icon image{
+  width: 45rpx;
+  height: 45rpx;
+  padding: 37.5rpx 0;
+}
+
+.my .my-item .myitem-name{
+  flex: 5;
+  text-align: left;
+  font-size: 34rpx;
+  color: #6d6d6d;
+  line-height: 60rpx;
+  padding: 30rpx 0;
+  border-bottom: solid 1px #ebebeb;
+}
+
+.my .my-item:last-child .myitem-name{
+  border-bottom: none;
+}
+
+.arrow{
+align-self: center;
+width: 10px;
+height: 10px;
+border-top: 2px solid #999;
+border-right: 2px solid #999;
+position: relative;
+right: 20rpx;
+transform: rotate(45deg);
+margin-top:10rpx;
+}

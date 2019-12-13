@@ -1,0 +1,22 @@
+<!--miniprogram/pages/operation/operation.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="top">第一步：选择你的学校</view>
+    <view class="row">
+      <view class="picker">
+        <picker bindchange="bindPickerChange" value="{{indexContact}}" range="{{arrayContact}}">
+          <view class="title">{{arrayContact[indexContact]}}
+          </view>
+        </picker>
+      </view>
+      <view class="hide">是否展示：
+        <switch checked bindchange="input_school_hide" checked="{{true}}" color="#50D2C2"></switch>
+      </view>
+      <view class="userinfo-img">
+        <view class="divLine"></view>
+        <button type="primary" form-type="submit">提交</button>
+        <view class="divLine"></view>
+      </view>
+    </view>
+  </form>
+</view>

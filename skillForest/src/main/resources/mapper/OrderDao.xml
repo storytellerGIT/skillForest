@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.OrderDao">
+    <select id="queryOrder" resultType="com.example.demo.entity.OrderUser">
+        SELECT orderid,user_openid,want ,my ,description,date_format(create_time,'%Y/%m/%d %H:%i:%s') as create_time,contact_qq,contact_wechat,contact_phone,complete_with,status,hot,openid,icon_url,nickname,school,school_hide,academy,academy_hide,grade,grade_hide,major,major_hide,register_time,credits
+        FROM orders, user
+        WHERE openid = user_openid AND status = 1
+        ORDER BY credits DESC , create_time DESC
+    </select>
+    <select id="queryOrderById" resultType="com.example.demo.entity.Order">
+        SELECT *
+        FROM orders
+        WHERE orderid=#{orderId}
+    </select>
+    <insert id="insertOrder" useGeneratedKeys="true" keyProperty="orderId" keyColumn="area_id" parameterType="com.example.demo.entity.Order">
+        INSERT INTO
+        orders
+        VALUE (#{orderId},#{userOpenId},#{want},#{my},#{description},#{createTime},#{contactQQ},#{contactWeChat},#{contactPhone},#{completeWith},#{status},#{hot})
+    </insert>
+    <select id="queryOrderByUser" resultType="com.example.demo.entity.OrderUser">
+        SELECT orderid,user_openid,want ,my ,description,date_format(create_time,'%Y/%m/%d %H:%i:%s') as create_time,contact_qq,contact_wechat,contact_phone,complete_with,status,hot,openid,icon_url,nickname,school,school_hide,academy,academy_hide,grade,grade_hide,major,major_hide,register_time,credits
+        FROM orders, user
+        WHERE user_openid=openid AND user_openid=#{userId}
+        OR user_openid=openid AND complete_with=#{userId}
+        ORDER BY create_time DESC
+    </select>
+    <select id="queryOrderByLabel"  resultType="com.example.demo.entity.OrderUser">
+        SELECT orderid,user_openid,want ,my ,description,date_format(create_time,'%Y/%m/%d %H:%i:%s') as create_time,contact_qq,contact_wechat,contact_phone,complete_with,status,hot,openid,icon_url,nickname,school,school_hide,academy,academy_hide,grade,grade_hide,major,major_hide,register_time,credits
+        FROM orders, user
+        WHERE status = 1
+        AND openid = user_openid
+        AND want LIKE #{label} OR my LIKE #{label}
+        AND status = 1
+        AND openid = user_openid
+        ORDER BY credits, create_time
+    </select>
+    <update id="updateStatus">
+        UPDATE orders
+        SET status = #{newStatus}
+        WHERE orderid = #{orderId}
+    </update>
+    <update id="updateCompleteWith">
+        UPDATE orders
+        SET complete_with = #{userid}
+        WHERE orderid = #{orderId}
+    </update>
+</mapper>

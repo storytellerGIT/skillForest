@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.ReportDao">
+    <insert id="newReport" parameterType="com.example.demo.entity.Report" useGeneratedKeys="true" keyProperty="reportId" keyColumn="reportId">
+        INSERT INTO report
+        VALUES (#{reportId},#{reporterId},#{opposite},#{orderId},#{reason},#{reporterContact},#{oppositeContact},#{reportTime},#{status})
+    </insert>
+    <select id="getNewReport" resultType="com.example.demo.entity.Report">
+        SELECT * from report
+        WHERE status=0
+        ORDER BY report_time
+    </select>
+    <select id="getAllReport" parameterType="com.example.demo.entity.Report">
+        SELECT * from report
+        ORDER BY report_time
+    </select>
+    <select id="getReport" resultType="com.example.demo.entity.Report">
+        SELECT * FROM report
+        WHERE reportId = #{reportId}
+    </select>
+    <update id="updateReport">
+        UPDATE report
+        set status = #{newStatus}
+        WHERE reportId = #{reportId}
+    </update>
+</mapper>

@@ -1,0 +1,29 @@
+<!--miniprogram/pages/record/record.wxml-->
+
+<view wx:for="{{post_key}}" class="abc" >
+  <view class="user_item" data-id="{{index}}">
+    <view class="user_part">
+      <image class="user_icon" src="{{item.iconUrl}}"></image>
+      <text class="user_name">{{item.nickName}}</text>
+    </view>
+    <view class="skill">
+      <text class="myskill">{{item.my}}</text>
+      <image class="exchange_icon" src="/images/icon/exchangeIcon.png"></image>
+      <text class="wantskill">{{item.want}}</text>
+    </view>
+    <view wx:if="{{post_key[index].status == 1}}" class="status2">
+      <text>已发布</text>
+    </view>
+    <view wx:if="{{post_key[index].status == 2}}" class="status">
+      <button class="clickbutton" bindtap="onTapComplete" data-orderid="{{post_key[index].orderId}}">完成</button>
+      <button wx:if="{{post_key[index].userOpenId == id}}" class="clickbutton" bindtap="onTapReject" data-orderid="{{post_key[index].orderId}}">拒绝</button>
+      <button class="clickbutton" bindtap="onTapReport" data-useropenid="{{post_key[index].userOpenId}}" data-orderid ="{{post_key[index].orderId}}">举报</button>
+    </view>
+    <view wx:if="{{post_key[index].status == 3}}" class="status2">
+      <text>已完成</text>
+    </view>
+    <view wx:if="{{post_key[index].status == 4}}" class="status2">
+      <text>已举报</text>
+    </view>
+  </view>
+</view>

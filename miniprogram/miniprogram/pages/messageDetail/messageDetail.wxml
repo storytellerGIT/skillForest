@@ -1,0 +1,18 @@
+<!--miniprogram/pages/messageDetail/messageDetail.wxml-->
+<view class="user_part">
+  <image class="avatar" src="{{iconUrl}}"></image>
+  <text class="text">{{nickName}}</text>
+</view>
+<view class="header">
+  <view>
+    <text>发送时间：</text>
+    <text>{{sendTime}}</text>
+  </view>
+  <view>
+    <text>标题：</text>
+    <text>{{title}}</text>
+  </view>
+</view>
+<view class="main_part">
+  <text>{{content}}</text>
+</view>

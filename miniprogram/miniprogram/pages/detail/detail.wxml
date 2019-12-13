@@ -1,0 +1,38 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="page">
+<view class="detail_item">
+  <view class="user">
+    <view class="user-info">
+      <text class="userinfo-nickname">{{nickName}}</text>
+      <view class="userinfo-img">
+        <image class="userinfo-avatar" src="{{iconUrl}}" background-size="cover" bindtap="ontap"></image>
+        <navigator class='arrow' url="/pages/publisherInfo/publisherInfo"></navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class="time_part">
+    <image class="myitem-icon" src="/images/shijian.png"></image>
+    <text class="text">发布时间：{{createTime}}</text>
+  </view>
+  <view class="lianxifangshi">
+    <image class="myitem-icon" src="/images/lianxifangshi.png"></image>
+    <text class="text">联系方式：</text>
+  </view>
+  <view class="contact_part">
+    <text class="method_part text1" wx:if="{{contactQQ}}">QQ: {{contactQQ}}</text>
+    <text class="method_part text1" wx:if="{{contactWeChat}}">微信: {{contactWeChat}}</text>
+    <text class="method_part text1" wx:if="{{contactPhone}}">手机号: {{contactPhone}}</text>
+  </view>
+  <view class="detail_part">
+    <image class="myitem-icon" src="/images/miaoshu.png"></image>
+    <text class="text">描述: {{description}}</text>
+  </view>
+  <view class="button_part">
+    <view class="divLine"></view>
+    <image class='myitem-icon1' hidden='{{!state}}' bindtap='interest' src='/images/heart1.png'></image>
+    <image class='myitem-icon1' hidden='{{state}}' bindtap='interest' src='/images/heart2.png'></image>
+    <view class="divLine"></view>
+  </view>
+</view>
+</view>

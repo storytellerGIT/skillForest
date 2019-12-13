@@ -1,0 +1,59 @@
+<view class="container more">
+  <view class="user">
+    <view class="user-info">
+      <text class="userinfo-nickname" bindtap="search">{{userInfo.nickName}}</text>
+    </view>
+    <view class="userinfo-img">
+      <view class="divLine"></view>
+      <image class="userinfo-avatar" src="{{userInfo.iconUrl}}" background-size="cover"></image>
+      <view class="divLine"></view>
+    </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="/images/xuexiao.jpg"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="jumpSchool">
+        <text>学校: {{school}}</text>
+      </view>
+      <navigator class='arrow' url="../operation/operation_school/operation_school?school={{school}}&openid={{openid}}"></navigator>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="/images/xueyuan.jpg"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="jumpAcademy">
+        <text>学院: {{academy}}</text>
+      </view>
+      <navigator class='arrow' url="../operation/operation_academy/operation_academy?academy={{academy}}&openid={{openid}}"></navigator>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="/images/nianji.jpg"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="jumpGrade">
+        <text>年级: {{grade}}</text>
+      </view>
+      <navigator class='arrow' url="../operation/operation_grade/operation_grade?grade={{grade}}&openid={{openid}}"></navigator>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="/images/zhuanye.jpg"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="jumpMajor">
+        <text>专业: {{major}}</text>
+      </view>
+      <navigator class='arrow' url="../operation/operation_major/operation_major?major={{major}}&openid={{openid}}"></navigator>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="/images/xinyong.jpg"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>信用: {{credits}}</text>
+      </view>
+    </view>
+  </view>
+</view>

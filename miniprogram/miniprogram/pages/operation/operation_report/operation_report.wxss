@@ -1,0 +1,59 @@
+/* miniprogram/pages/operation/operation.wxss */
+.container{
+  padding: 0;
+  font-size: 16rpx;
+  color: #000;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  width: 725rpx;
+  height: 550rpx;
+  background: #ffffff;
+  padding: 50rpx 0;
+  margin: 15rpx 0 10rpx 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 2px #eeeeee;
+}
+
+.row text{
+  text-align: right;
+}
+
+.row input{
+  font-size: 0.7rem;
+  flex-grow: 3;
+  border: 1px solid #0099CC;
+  display: inline-block;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.15rem #aaa;
+  padding: 10rpx 0;
+  margin: 50rpx 0 30rpx 0;
+}
+
+.row button{
+  font-size: 26rpx;
+  background-color: #94c6ee;
+  border-radius: 98rpx;
+}
+
+.row button::after {
+  border-radius: 98rpx;
+}
+
+.userinfo-img{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.divLine{
+  align-self: canter;
+  background: #E0E3DA;
+  width: 35%;
+  height: 2rpx;
+}
+

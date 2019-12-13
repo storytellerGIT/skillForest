@@ -1,0 +1,12 @@
+<!--miniprogram/pages/tabNews/news.wxml-->
+<view class="page">
+<block wx:for="{{post_key}}">
+  <view class="user_item" bindtap="ontap" data-id="{{index}}">
+      <image class="user_icon" src="{{item.iconUrl}}"></image>
+      <view>
+        <text class="user_name">{{item.nickName}}\n</text>
+        <text class="message">{{item.title}}</text>
+      </view>
+  </view>
+</block>
+</view>

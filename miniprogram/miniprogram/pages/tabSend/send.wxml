@@ -1,0 +1,51 @@
+<view class="container">
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section">
+    <view class="title">可提供的帮助类别</view>
+    <view wx:for='{{array}}' wx:key='' class="section3">
+        <input class='input_part' placeholder='请输入' data-idx='{{index}}' value='{{gives[index]}}' bindinput='getInputVal'/>    
+        <button class='del' bindtap='delInput' data-idx='{{index}}' size="mini">删除分类</button>
+    </view>
+    <view class="section3">
+      <button class='add' bindtap='addInput' size="mini">增加分类</button>
+    </view> 
+  </view>
+    
+
+    <view class="section">
+      <view class="title">需要的帮助类别</view>
+      <view wx:for='{{array1}}' wx:key='' class="section3">
+        <input class='input_part' placeholder='请输入' data-idx='{{index}}' value='{{wants[index]}}' bindinput='getInputVal1'/>    
+        <button class='del' bindtap='delInput1' data-idx='{{index}}' size="mini">删除分类</button>
+      </view>
+      <view class="section3">
+        <button class='add' bindtap='addInput1' size="mini">增加分类</button>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="title">内容描述</view>
+      <textarea name="descriptions" placeholder="请简要描述互助的内容" placeholder-class="hold"/>
+    </view>
+
+    <view class="section">
+      <view class="title">联系方式</view>
+      <view class="section2">
+        <view class="picker">
+        <picker bindchange="bindPickerChange" value="{{indexContact}}" range="{{arrayContact}}">
+          <view class="title">
+            {{arrayContact[indexContact]}}
+          </view>
+        </picker>
+        </view>
+        <input class="hold" name="contact" placeholder="请输入联系方式"  />
+      </view>
+    </view>
+    
+    <view class="section2">
+      <button formType="submit" size="mini">提交</button>
+      <button formType="reset" size="mini">重置</button>
+    </view>
+</form>
+</view>

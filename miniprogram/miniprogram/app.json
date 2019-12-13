@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/button/button",
+    "pages/login/login",
+    "pages/tabHomeRecommend/homeRecommend",
+    "pages/tabSearch/search",
+    "pages/tabNews/news",
+    "pages/tabPersonalInfo/mine",
+    "pages/tabSend/send",
+    "pages/detail/detail",
+    "pages/publisherInfo/publisherInfo",
+    "pages/integral/integral",
+    "pages/mydata/mydata",
+    "pages/records/records",
+    "pages/operation/operation_school/operation_school",
+    "pages/operation/operation_academy/operation_academy",
+    "pages/operation/operation_grade/operation_grade",
+    "pages/operation/operation_major/operation_major",
+    "pages/messageDetail/messageDetail",
+    "pages/operation/operation_report/operation_report",
+    "pages/register/register_school/register_school",
+    "pages/register/register_academy/register_academy",
+    "pages/register/register_major/register_major",
+    "pages/register/register_grade/register_grade",
+    "pages/register/register_tips/register_tips",
+    "pages/searchResult/searchResult",
+    "pages/rule/rule",
+    "pages/visitor/visitor",
+    "pages/introduction/introduction"
+  ],
+  "window": {
+    "navigationBarTitleText": "技能森林",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/tabHomeRecommend/homeRecommend",
+        "text": "首页",
+        "iconPath": "images/tabbar/icon_home.png",
+        "selectedIconPath": "images/tabbar/icon_home.png"
+      },
+      {
+        "pagePath": "pages/tabSearch/search",
+        "text": "搜索",
+        "iconPath": "images/tabbar/icon_search.png",
+        "selectedIconPath": "images/tabbar/icon_search.png"
+      },
+      {
+        "pagePath": "pages/tabSend/send",
+        "text": "",
+        "iconPath": "images/tabbar/icon_send.png",
+        "selectedIconPath": "images/tabbar/icon_send.png"
+      },
+      {
+        "pagePath": "pages/tabNews/news",
+        "text": "消息",
+        "iconPath": "images/tabbar/icon_news.png",
+        "selectedIconPath": "images/tabbar/icon_news.png"
+      },
+      {
+        "pagePath": "pages/tabPersonalInfo/mine",
+        "text": "我的",
+        "iconPath": "images/tabbar/icon_personalInfo.png",
+        "selectedIconPath": "images/tabbar/icon_personalInfo.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,15 @@
+<!--miniprogram/pages/operation/operation.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="row">
+      <input type="text" name="reporterContact" placeholder="请输入你的联系方式(如QQ：XXXX)" value="{{reporterContact}}" bindblur="wordBlur" bindinput="reporterContact"></input>
+      <input type="text" name="oppositeContact" placeholder="请输入举报对象的联系方式(如QQ：XXXX)" value="{{oppositeContact}}" bindblur="wordBlur" bindinput="oppositeContact"></input>
+      <input type="text" name="reason" placeholder="请输入举报理由" value="{{reason}}" bindblur="wordBlur" bindinput="reason"></input>
+      <view class="userinfo-img">
+        <view class="divLine"></view>
+        <button type="primary" form-type="submit">提交</button>
+        <view class="divLine"></view>
+      </view>
+    </view>
+  </form>
+</view>

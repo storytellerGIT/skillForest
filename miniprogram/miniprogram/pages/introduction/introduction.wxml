@@ -1,0 +1,43 @@
+<view class="rule">
+<view class="title">欢迎开启技能交换的奇幻之旅！</view>
+<view>
+<text decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;当你点击这个小程序的时候，就意味着你已经拥有了人生最宝贵的品质之一，好奇心。
+</text>
+</view>
+<view>
+<text decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;对新的学习充满期待，对新的技能充满好奇，对新的人生充满激情。
+</text>
+</view>
+<view>
+<text decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;那么先来学习下使用方式吧
+</text>
+</view>
+<view>
+<text decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;在你结束阅读之后，你将进入注册界面，需要提醒你的是，虽然你可以选择隐藏部分个人信息，但是更多的信息意味着可靠性的提升，你的感兴趣更容易被发布者接受。你需要发布一条通过你已会的技能交换感兴趣的技能的信息在社区中，以保证社区中有足够多有趣的技能供所有用户选择，你的努力帮助构建了良好的社区生态。
+</text>
+</view>
+<view>
+<text decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;之后，在进入社区之后，你可以随便浏览其他人的消息，对于你感兴趣的交换，点击感兴趣按钮，对方将会根据你的信息和信用分来决定是否接受你的感兴趣。如果对方接受你了，你们就可以开始进行互助了！
+</text>
+</view>
+<view>
+<text decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;如果拒绝了你，也不要灰心，多发出感兴趣邀请，一定可以成功匹配。对于你发布的消息，你也拥有同样的接受或者拒绝的权利，如果你接受了，那么这条信息会被撤下，如果你拒绝了，它会重回社区，等待其他人点击感兴趣。
+</text>
+</view>
+<view>
+<text decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;下面，很重要的一部分：举报与安全。如果在学习的过程前，过程中，乃至结束，发生任何问题，你都可以通过举报来解决，后台会尽快处理，并给你一个满意的答复。
+</text>
+</view>
+<view>
+<text decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;最后，亦师亦生，亦师亦友，祝你享受技能交换的过程，并有所收获。
+</text>
+</view>
+</view>

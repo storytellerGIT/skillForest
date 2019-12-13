@@ -1,0 +1,35 @@
+<!--miniprogram/pages/tabHomeRecommend/homeRecommend.wxml-->
+<view class='projectbox'>
+  <view class='body'>
+    <text class='title0'>特别推荐</text>
+    <swiper class='imgsilder' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-active-color="#FFD92E" indicator-color="#E8F0F1" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image mode='aspectFill' src="{{item}}" class="slide-image" width="355" height="200" bindtap='gotoDetail' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view wx:for="{{post_key}}" class="abc" >
+    <view class="user_item" bindtap="onTap" data-id="{{index}}">
+      <view class='project'>
+        <image class='headimage' src="{{item.iconUrl}}"></image>
+        <view class='projecttext'>
+          <text class='biaoti'>{{item.nickName}}</text>
+          <view class='row'>
+            <image class='userinfo-avatar' src="/images/jiantou1.jpg"></image>
+            <text class='jianjie'> {{item.my}}</text>
+          </view>
+          <view class='row'>
+            <image class='userinfo-avatar' src="/images/jiantou2.jpg"></image>
+            <text class='jianjie'> {{item.want}}</text>
+          </view>
+          <text class='field'>热度: {{item.hot}}</text>
+        </view>
+        <navigator bindtap="">
+          <view class='openpush'></view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

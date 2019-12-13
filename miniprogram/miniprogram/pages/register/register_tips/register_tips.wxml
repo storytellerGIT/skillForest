@@ -1,0 +1,19 @@
+<!--miniprogram/pages/operation/operation.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="top">首先...</view>
+    <view class="row">
+      <text class="middle" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;以下注册信息将只用作为您提供更好的推荐，以及让别人更好了解你发布的信息。
+  &nbsp;&nbsp;&nbsp;&nbsp;您也可以选择是否隐藏您的个人信息，隐藏后，其他用户将不能在您发布的信息处获取到您的详细信息。</text>
+  
+      <view class="userinfo-img">
+      
+        <view class="divLine"></view>
+        <button type="primary" form-type="submit">开始注册</button>
+        <view class="divLine"></view>
+      </view>
+      
+    </view>
+  </form>
+      <view class="rule" bindtap="rule">《社区规则》</view>
+</view>

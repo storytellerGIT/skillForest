@@ -1,0 +1,131 @@
+/* miniprogram/pages/login/login.wxss */
+.hint{
+  display: flex;
+  flex-direction: column;
+  width: 725rpx;
+  height: 170rpx;
+  background: #f3f7fa;
+  padding: 20rpx 0;
+  margin: 15rpx 0 15rpx 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 2px #eeeeee;
+}
+
+.hint1{
+  display: flex;
+  flex-direction: column;
+  width: 725rpx;
+  height: 85rpx;
+  background: #f3f7fa;
+  padding: 20rpx 0;
+  margin: 15rpx 0 15rpx 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 2px #eeeeee;
+}
+
+.hint .text{
+  text-align: justify;
+}
+.hint .text::after{
+  width: 100%;
+  display: inline-block;
+  content: '';
+}
+
+.hint .head{
+  text-align: center;
+  font-size: 30rpx;
+  color: rgb(88, 90, 92);
+}
+
+.hint1 .text{
+  text-align: justify;
+}
+.hint1 .text::after{
+  width: 100%;
+  display: inline-block;
+  content: '';
+}
+
+.hint1 .head{
+  text-align: center;
+  font-size: 30rpx;
+  color: rgb(88, 90, 92);
+}
+
+.personalInfo{
+  background: #f3f7fa;
+  width: 725rpx;
+  padding: 10rpx 0;
+  margin: 10rpx 0 15rpx 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 2px #eeeeee;
+  font-size: 42rpx;
+  color: rgb(88, 90, 92);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.school{
+  align-items: center;
+  margin-top: 10rpx;
+  display: flex;
+}
+
+.academy{
+  align-items: center;
+  margin-top: 10rpx;
+  display: flex;
+}
+
+.major{
+  align-items: center;
+  margin-top: 10rpx;
+  display: flex;
+}
+
+.input_part{
+  font-size: 0.7rem;
+  flex-grow: 3;
+  border: 1px solid #0099CC;
+  display: inline-block;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.15rem #aaa;
+  padding: 10rpx 0;
+  margin: 50rpx 0 30rpx 0;
+  background-color: #fff;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.text_part{
+  margin-left: 20rpx;
+}
+
+.grade{
+  margin-top: 10rpx;
+  display: flex;
+}
+
+.hide{
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+.grade .radio-group{
+  display: flex;
+  align-items: center;
+}
+
+.grade radio-group .radio{
+  margin-left: 20rpx;
+}
+
+switch{
+  zoom: 0.7;
+}

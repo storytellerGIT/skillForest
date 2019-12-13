@@ -1,0 +1,25 @@
+<!--miniprogram/pages/operation/operation.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="top">第三步</view>
+    <view class="row">
+      <view class="grade">
+        <text class="text_part">年级： </text>
+        <radio-group name="radio-group" bindchange="input_grade">
+          <label style="display: flex"><radio value="radio1" value="大一"/>大一</label>
+          <label style="display: flex"><radio value="radio2" value="大二"/>大二</label>
+          <label style="display: flex"><radio value="radio3" value="大三"/>大三</label>
+          <label style="display: flex"><radio value="radio4" value="大四"/>大四</label>
+        </radio-group>
+    </view>
+      <view class="hide">是否展示：
+        <switch checked bindchange="input_grade_hide" checked="{{true}}" color="#50D2C2"></switch>
+      </view>
+      <view class="userinfo-img">
+        <view class="divLine"></view>
+        <button type="primary" form-type="submit">提交</button>
+        <view class="divLine"></view>
+      </view>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,51 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class="container">
+  <view class="hint">
+    <text class="head">以下信息将只用作为您提供更好的推荐，以及让别人更好了解你发布的信息。
+    您也可以选择是否隐藏您的个人信息，隐藏后，其他用户将不能在您发布的信息处获取到您的详细信息</text>
+  </view>
+  <view class="personalInfo">
+    <view class="school">
+      <text class="text_part">学校：</text>
+      <input focus="{{focus}}" class="input_part" placeholder="请输入学校中文全称" bindinput="input_school"></input>
+    </view>
+    <view class="hide">是否隐藏：
+      <switch checked bindchange="input_school_hide" checked="{{false}}"></switch>
+    </view>
+
+    <view class="academy">
+      <text class="text_part">学院：</text>
+      <input focus="{{focus}}" class="input_part" placeholder="请输入学院中文全称" bindinput="input_academy"></input>
+    </view>
+    <view class="hide">是否隐藏：
+      <switch checked bindchange="input_academy_hide" checked="{{false}}"></switch>
+    </view>
+
+    <view class="grade">
+      <text class="text_part">年级： </text>
+      <radio-group name="radio-group" bindchange="input_grade">
+        <label style="display: flex"><radio value="radio1" value="1"/>大一</label>
+        <label style="display: flex"><radio value="radio2" value="2"/>大二</label>
+        <label style="display: flex"><radio value="radio3" value="3"/>大三</label>
+        <label style="display: flex"><radio value="radio4" value="4"/>大四</label>
+      </radio-group>
+    </view>
+    <view class="hide">是否隐藏：
+      <switch checked bindchange="input_grade_hide" checked="{{false}}"></switch>
+    </view>
+
+    <view class="major">
+      <text class="text_part">专业：</text>
+      <input focus="{{focus}}" class="input_part" placeholder="请输入专业中文全称" bindinput="input_major"></input>
+    </view>
+    <view class="hide">是否隐藏：
+      <switch checked bindchange="input_major_hide" checked="{{false}}"></switch>
+    </view>
+  </view>
+
+  <view class="hint1">
+      <text class="head">为了更好的维护生态，在您完成注册后将会跳转至发布页面，在您发布一条需求后将会完成注册。</text>
+  </view>
+
+  <button class="clickbutton" bindtap="onTap" style="margin: 30rpx 20rpx 0rpx 30rpx" type="primary">提交</button>
+</view>

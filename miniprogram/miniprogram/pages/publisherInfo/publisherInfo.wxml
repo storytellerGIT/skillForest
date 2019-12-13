@@ -1,0 +1,53 @@
+
+
+<view class="container more">
+  <view class="user">
+    <view class="user-info">
+      <text class="userinfo-nickname" bindtap="search">{{nickName}}</text>
+    </view>
+    <view class="userinfo-img">
+      <view class="divLine"></view>
+      <image class="userinfo-avatar" src="{{iconUrl}}" background-size="cover"></image>
+      <view class="divLine"></view>
+    </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="/images/xuexiao.jpg"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        学校: <text wx:if="{{schoolHide}}">{{school}}</text>
+        <text wx:if="{{!schoolHide}}">已隐藏</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="/images/xueyuan.jpg"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        学院: <text wx:if="{{academyHide}}">{{academy}}</text>
+        <text wx:if="{{!academyHide}}">已隐藏</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="/images/nianji.jpg"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        年级: <text wx:if="{{gradeHide}}">{{grade}}</text>
+        <text wx:if="{{!gradeHide}}">已隐藏</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="/images/zhuanye.jpg"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        专业: <text wx:if="{{majorHide}}">{{major}}</text>
+        <text wx:if="{{!majorHide}}">已隐藏</text>
+      </view>
+    </view>
+  </view>
+</view>

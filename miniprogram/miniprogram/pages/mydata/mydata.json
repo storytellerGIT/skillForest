@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#0068C4",
+  "navigationBarTitleText": "我的资料",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

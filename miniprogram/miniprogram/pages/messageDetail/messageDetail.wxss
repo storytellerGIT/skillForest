@@ -1,0 +1,53 @@
+/* miniprogram/pages/messageDetail/messageDetail.wxss */
+
+.user_part{
+  font-size: 38rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  padding-bottom: 5px;
+}
+
+.header{
+  font-size: 35rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  padding: 15rpx 30rpx 15rpx 30rpx;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 2px #eeeeee;
+  border-radius: 20px;
+}
+
+.main_part{
+  font-size: 32rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  padding: 15rpx 30rpx 15rpx 30rpx;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 2px #eeeeee;
+  border-radius: 20px;
+  background: #f1f1f1;
+}
+
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  border-radius: 50%;
+}
+
+.text{
+  margin-left: 20rpx;
+  font-size: 34rpx;
+  color: #646464;
+}

@@ -1,0 +1,34 @@
+<view class="container more">
+  <view class="user">
+    <view class="user-info">
+      <text class="userinfo-nickname">积分明细</text>
+    </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/person.png"></image>
+      </view>
+      <view class="myitem-name flex-item" data-name="{{userInfo.nickName}}">
+        <text>我的资料</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/record.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>历史记录</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/bonus.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的积分</text>
+      </view>
+    </view>
+  </view>
+</view>

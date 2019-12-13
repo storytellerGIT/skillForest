@@ -1,0 +1,16 @@
+<!--miniprogram/pages/operation/operation.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="row">
+      <input type="text" name="major" placeholder="请输入专业名称" value="{{major}}" bindblur="wordBlur"></input>
+      <view class="hide">是否展示：
+        <switch checked bindchange="input_major_hide" checked="{{hide}}" color="#50D2C2"></switch>
+      </view>
+      <view class="userinfo-img">
+        <view class="divLine"></view>
+        <button type="primary" form-type="submit">提交</button>
+        <view class="divLine"></view>
+      </view>
+    </view>
+  </form>
+</view>
